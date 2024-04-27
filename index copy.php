@@ -12,7 +12,6 @@
     <div class="main">
         <div class="crclBlock">
             <div class="crclPanel">
-                <h2 class="dose">CrCl計算:</h2>
                 <div class="ant-opt">
                     <label for="age">Age</label>
                     <input type="text" name="age" placeholder="輸入年齡" id="age" value="<?php echo $_GET['age'];?>">
@@ -21,7 +20,7 @@
                     <label>Gender</label>
                     <select name="gender" id="gender">
                         <option value="male">男</option>
-                        <option value="female" <?php if($_GET['gender'] == "female"){ echo 'selected';}?>>女</option>
+                        <option value="female">女</option>
                         
                     </select>
                 </div>
@@ -40,7 +39,7 @@
             </div>
         </div>
         <div id="antiPanel" class="antiPanel">
-            <h2 class="dose">抗生素劑量:</h2>
+            <h2 class="dose">建議劑量:</h2>
             <div class="ant-opt">
                 <label>Anti</label>
                 <select class="dev" name="anti" id="anti">
@@ -64,23 +63,23 @@
             <p class="p-note">*under development</p>
             
             <div class="dosage_suggest">
-                <p class="dosage_suggest"><?php
-                    if($anti_selected != ''){
-                        echo $anti_selected['adult_dose'];
-                    }
+                <p><?php
+                    echo $anti_selected['adult_dose'];
                 ?></p>
             </div>
             <form action="index.php" id="anti_form" method="get" hidden>
-                <input type="text" name="age" value="0" id="age_f">
-                <input type="text" name="gender" value="0" id="gender_f">
-                <input type="text" name="weight" value="0" id="weight_f">
-                <input type="text" name="cr" value="0" id="cr_f">
                 <input type="text" name="crcl" value="0" id="crcl_form">
                 <input type="text" id="anti_type" value="0" name="anti">
             </form>
         </div>
     </div>
     
+    
+    <div class="footer-wrap" hidden>
+        <footer>
+            &copy; Copyright 2024 TPECHRebuildProject
+        </footer>
+    </div>
     <script src="index.js"></script>
 </body>
 

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins';
+}
+
+body{
+
+    background-color: #e8eaf5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main{
+    align-items:stretch;
+    display: flex;
+    justify-content: center;
+}
+
+.crclBlock{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.crclBlock h1{
+    font-size: 32pt;
+    font-weight: 500;
+}
+
+.crclPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px;
+    width: 300px;
+    height: 320px;
+    background-color: #ffffff;
+    padding: 6px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #5555555f;
+    margin-bottom: 0px;
+}
+
+.antiPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:10px;
+    width: 300px;
+    background-color: #ffffff;
+    padding: 6px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #5555555f;
+    
+}
+
+.antiPanel-hide{
+    display: none;
+}
+
+.ant-opt{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+input{
+    
+    background-color: #dddddd;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.dev{
+    background-color: #fde9e9;
+
+}
+
+select{
+    width: 150px;
+    background-color: #dddddd;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.resultPanel{
+    width: 300px;
+    background-color: #2a3442;
+    border-radius: 10px;
+    padding: 6px 30px;
+}
+
+.resultPanel p{
+    color:#ffffff;
+    margin: 0px;
+}
+
+.dosage_suggest{
+    background-color: #dddddd;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.dosage_suggest p{
+    font-size: 14px;
+}
+
+.p-align-rt{
+    text-align: right;
+}
+
+.p-note{
+    color: #dd0000;
+    font-size: 12px;
+    margin: 0px;
+    text-align: right;
+}
+
+
+
+b{
+    font-size: 24px;
+}
+
+footer{
+    font-size:12px;
+}
+
+h2{
+    margin-bottom: 0px;
+}
